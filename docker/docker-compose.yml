@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  app:
+    image: vue_h3_calculator
+    build:
+      context: ./..
+      dockerfile: ./docker/app/Dockerfile
+    ports:
+      - ${PORT}:80
